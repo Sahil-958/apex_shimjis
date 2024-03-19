@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-07-04T03:40:01</date>
+  <millis>1688460001001</millis>
+  <sequence>210</sequence>
+  <logger>com.group_finity.mascot.Main</logger>
+  <level>SEVERE</level>
+  <class>com.group_finity.mascot.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Out of Memory Exception.  There are probably have too many Shimeji mascots in the image folder for your computer to handle.  Select fewer image sets or move some to the img/unused folder and try again.</message>
+  <exception>
+    <message>java.lang.OutOfMemoryError: Java heap space</message>
+    <frame>
+      <class>com.group_finity.mascot.win.WindowsNativeImage</class>
+      <method>&lt;init&gt;</method>
+      <line>121</line>
+    </frame>
+    <frame>
+      <class>com.group_finity.mascot.win.NativeFactoryImpl</class>
+      <method>newNativeImage</method>
+      <line>26</line>
+    </frame>
+    <frame>
+      <class>com.group_finity.mascot.image.MascotImage</class>
+      <method>&lt;init&gt;</method>
+      <line>29</line>
+    </frame>
+    <frame>
+      <class>com.group_finity.mascot.image.ImagePairLoader</class>
+      <method>load</method>
+      <line>35</line>
+    </frame>
+    <frame>
+      <class>com.group_finity.mascot.config.AnimationBuilder</class>
+      <method>loadPose</method>
+      <line>64</line>
+    </frame>
+    <frame>
+      <class>com.group_finity.mascot.config.AnimationBuilder</class>
+      <method>&lt;init&gt;</method>
+      <line>42</line>
+    </frame>
+    <frame>
+      <class>com.group_finity.mascot.config.ActionBuilder</class>
+      <method>&lt;init&gt;</method>
+      <line>57</line>
+    </frame>
+    <frame>
+      <class>com.group_finity.mascot.config.Configuration</class>
+      <method>load</method>
+      <line>46</line>
+    </frame>
+    <frame>
+      <class>com.group_finity.mascot.Main</class>
+      <method>loadConfiguration</method>
+      <line>324</line>
+    </frame>
+    <frame>
+      <class>com.group_finity.mascot.Main</class>
+      <method>run</method>
+      <line>278</line>
+    </frame>
+    <frame>
+      <class>com.group_finity.mascot.Main</class>
+      <method>main</method>
+      <line>133</line>
+    </frame>
+  </exception>
+</record>
+</log>
